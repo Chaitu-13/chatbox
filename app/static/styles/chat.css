@@ -1,0 +1,124 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Title styling */
+h1 {
+    color: #007bff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Chatbox area */
+#chat {
+    width: 100%;
+    height: calc(100vh - 200px);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #333;
+    resize: none;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Input area (input field and button) */
+.input-area {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Input field for messages */
+#text {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#text:focus {
+    border-color: #007bff;
+}
+
+/* Send button */
+#send-btn {
+    width: 15%;
+    padding: 6px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Leave chat button */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    #chat {
+        width: 100%;
+        height: calc(100vh - 200px);
+    }
+
+    #text {
+        width: 80%;
+    }
+
+    #send-btn {
+        width: 15%;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
